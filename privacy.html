@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Deep Desert Companion Bot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & base */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Orbitron', sans-serif; background: #000; color: #fff; }
+    a { color: inherit; text-decoration: none; }
+
+    /* Navbar */
+    nav { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.8); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; z-index: 100; }
+    nav .logo { font-size: 1.5rem; font-weight: 700; letter-spacing: 2px; color: #FFA500; }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav ul li a { font-weight: 500; }
+
+    /* Hero */
+    .hero { padding-top: 5rem; text-align: center; padding: 2rem; }
+    .hero h1 { font-size: 3rem; color: #FFA500; text-shadow: 0 0 20px #FFA500; }
+
+    /* Content */
+    .content { max-width: 800px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
+    .content h2 { font-size: 1.75rem; border-bottom: 2px solid #FFA500; margin-top: 2rem; padding-bottom: 0.5rem; }
+    .content p, .content ul { margin-top: 1rem; }
+    .content ul { list-style-position: inside; }
+    .content li { margin-bottom: 0.5rem; }
+
+    /* Footer */
+    footer { background: #111; text-align: center; padding: 2rem; font-size: 0.875rem; }
+    footer a { color: #FFA500; }
+
+    /* Responsive */
+    @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } nav ul { display: none; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">DEEP DESERT BOT</div>
+    <ul>
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#commands">Commands</a></li>
+      <li><a href="index.html#invite">Invite</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Privacy Policy</h1>
+  </header>
+
+  <div class="content">
+    <p>Last updated: July 2025</p>
+
+    <p>The Deep Desert Companion Bot respects your privacy. This policy explains what information the bot collects, how it's used, and your rights.</p>
+
+    <h2>Information Collected</h2>
+    <ul>
+      <li><strong>Interaction Data</strong>: Commands you invoke (/ddmap, /ddreset) and timestamps.</li>
+      <li><strong>Caching Metadata</strong>: Screenshot timestamps stored locally to manage cache invalidation.</li>
+    </ul>
+
+    <h2>Usage of Information</h2>
+    <ul>
+      <li>To generate and serve up-to-date map and storm information upon user request.</li>
+      <li>To manage caching logic, ensuring efficient responses.</li>
+    </ul>
+
+    <h2>Data Storage & Retention</h2>
+    <p>All data is stored locally on your bot host. No external servers or databases are used. Cached images expire automatically after the next Coriolis storm reset.</p>
+
+    <h2>No Personal Data</h2>
+    <p>The bot does not collect or store personal data, user IDs, or message contents beyond slash-command interactions.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>No third-party analytics or tracking services are employed. Puppeteer is used solely for map scraping; no logs are shared.</p>
+
+    <h2>Your Controls</h2>
+    <ul>
+      <li>You can delete the <code>cache</code> folder at any time to clear stored images.</li>
+      <li>Revoke the bot’s permissions in your Discord server settings to stop data processing.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 WarnFunction | <a href="https://warnfunction.github.io/ddmap-bot-site/">GitHub</a></p>
+  </footer>
+</body>
+</html>
