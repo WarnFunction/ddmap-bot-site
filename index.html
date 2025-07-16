@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Desert Companion Bot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & base */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Orbitron', sans-serif; background: #000; color: #fff; }
+    a { color: inherit; text-decoration: none; }
+
+    /* Navbar */
+    nav { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.8); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; z-index: 100; }
+    nav .logo { font-size: 1.5rem; font-weight: 700; letter-spacing: 2px; color: #FFA500; }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav ul li a { font-weight: 500; }
+
+    /* Hero */
+    .hero { height: 100vh; background: url('https://static.deltiasgaming.com/2025/06/Dune-Awakening-7.png') center/cover no-repeat; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 2rem; }
+    .hero h1 { font-size: 4rem; color: #FFA500;
+      /* orange glow + white outline */
+      text-shadow:
+        0 0 20px #FFA500,
+        0 0 10px #ffffff;
+    }
+    .hero p { margin-top: 1rem; font-size: 1.25rem; max-width: 600px; }
+    .hero .btn { margin-top: 2rem; background: #FFA500; color: #000; padding: 1rem 2rem; font-size: 1rem; border-radius: 5px; transition: background 0.3s; }
+    .hero .btn:hover { background: #FFB347; }
+    /* Invite button styling */
+    .invite-btn {
+      background: #FFA500;
+      color: #000;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 1rem;
+    }
+    .invite-btn:hover { background: #FFB347; }
+
+    /* Sections */
+    section { padding: 4rem 2rem; }
+    .section-title { font-size: 2rem; margin-bottom: 1rem; border-bottom: 2px solid #FFA500; display: inline-block; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 2rem; margin-top: 2rem; }
+    .feature { background: rgba(255,165,0,0.1); padding: 2rem; border-radius: 8px; text-align: center; }
+    .feature h3 { margin-bottom: 1rem; color: #FFA500; }
+
+    /* Footer */
+    footer { background: #111; text-align: center; padding: 2rem; font-size: 0.875rem; }
+    footer a { color: #FFA500; }
+
+    /* Responsive */
+    @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } nav ul { display: none; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">DEEP DESERT BOT</div>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#commands">Commands</a></li>
+      <li><a href="#invite">Invite</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="hero">
+    <h1>YOUR DUNE: AWAKENING COMPANION</h1>
+    <p>Keep your guild ready for the sands—grab maps, track storms, and conquer the Deep Desert.</p>
+    <a class="btn" href="#commands">See Commands</a>
+  </header>
+
+  <section id="features">
+    <h2 class="section-title">Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Instant Map Capture</h3>
+        <p><code>/ddmap</code> delivers a clean, ad-free Deep Desert grid map screenshot—cached until the next storm reset.</p>
+      </div>
+      <div class="feature">
+        <h3>Storm Countdown</h3>
+        <p><code>/ddreset</code> shows per-region Coriolis Storm timers with local timestamps—always stay ahead of the storm.</p>
+      </div>
+      <div class="feature">
+        <h3>Smart Caching</h3>
+        <p>Automatically caches the map image and only refreshes after the weekly reset—fast responses every time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="commands">
+    <h2 class="section-title">Commands</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>/ddmap</h3>
+        <p>Fetches the Deep Desert grid map screenshot, cached until the next Coriolis Storm.</p>
+      </div>
+      <div class="feature">
+        <h3>/ddreset</h3>
+        <p>Displays countdowns to the next storm across NA, SA, EU, Asia, and Oceania with local times.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="invite">
+    <h2 class="section-title">Invite the Bot</h2>
+    <p>Bring the Deep Desert Companion into your server for tactical advantage in Dune: Awakening.</p>
+    <a href="https://discord.com/oauth2/authorize?client_id=1394035452599865545&permissions=117760&scope=bot%20applications.commands
+"><button class="btn invite-btn">Invite Now</button></a>
+  </section>
+
+  <footer id="footer">
+    <p>&copy; 2025 WarnFunction | <a href="https://github.com/WarnFunction/ddmap-bot">GitHub</a></p>
+  </footer>
+</body>
+</html>
